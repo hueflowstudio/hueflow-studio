@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F0EDE8;
+  --foreground: #2C1810;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat), sans-serif;
+  --font-serif: var(--font-noto-sans), sans-serif;
+  --font-display: var(--font-cormorant), serif;
+  --font-accent: var(--font-montserrat), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans), "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Hero aurora gradient animation */
+@keyframes aurora {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  33% { transform: translate(5%, -5%) scale(1.1); }
+  66% { transform: translate(-5%, 5%) scale(0.9); }
+}
+
+@keyframes aurora-2 {
+  0%, 100% { transform: translate(-3%, 4%) scale(0.95); }
+  50% { transform: translate(4%, -3%) scale(1.08); }
+}
+
+@keyframes aurora-3 {
+  0%, 100% { transform: translate(4%, 2%) scale(1.05); }
+  50% { transform: translate(-4%, -4%) scale(0.92); }
+}
