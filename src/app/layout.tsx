@@ -10,7 +10,7 @@ const cormorant = Cormorant_Garamond({
 
 const notoSansKR = Noto_Sans_KR({
   variable: "--font-noto-sans",
-  subsets: ["latin", "korean"],
+  subsets: ["latin"],
   weight: ["300", "400"],
 });
 
